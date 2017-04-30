@@ -13,9 +13,6 @@ source=("${pkgname}-${pkgver}.tar.gz::${url}/${pkgname}-${pkgver}.tar.gz")
 md5sums=('84fd2e0878c7d70932d7a8d94e1958a8')
 
 package() {
-#    cd "${srcdir}"
-#    cp "${srcdir}"/"${pkgname}"-"${pkgver}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
     mkdir -p "$pkgdir"/usr/share/libalpm/hooks
     cp "${srcdir}"/"${pkgname}"/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
-#     install -Dm0644 "${srcdir}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
      }
