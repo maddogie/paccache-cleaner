@@ -10,7 +10,7 @@ license=('none')
 depends=('pacman>=5.0')
 #source=("${pkgname}-${pkgver}.tar.gz::${url}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 source=("${pkgname}-${pkgver}.tar.gz::${url}/${pkgname}-${pkgver}.tar.gz")
-sha512sums=('')
+md5sums=('8993690cfb5918d607b77b2998c8a87a')
 
 package() {
     cd "${pkgname}"
