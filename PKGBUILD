@@ -10,12 +10,12 @@ license=('')
 depends=('')
 #source=("${pkgname}-${pkgver}.tar.gz::${url}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 source=("${pkgname}-${pkgver}.tar.gz::${url}/${pkgname}-${pkgver}.tar.gz")
-md5sums=('e2727c73c769ebe97f72d9bce49d43b7')
+md5sums=('84fd2e0878c7d70932d7a8d94e1958a8')
 
 package() {
-    cd "${pkgdir}"
+#    cd "${srcdir}"
 #    cp "${srcdir}"/"${pkgname}"-"${pkgver}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
-#    mkdir -p "$pkgdir"/tmp/hundededreck/stinkt/
-    cp "${srcdir}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
+    mkdir -p "$pkgdir"/usr/share/libalpm/hooks
+    cp "${srcdir}"/"${pkgname}"/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
 #     install -Dm0644 "${srcdir}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
      }
