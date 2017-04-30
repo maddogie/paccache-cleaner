@@ -14,5 +14,6 @@ md5sums=('8993690cfb5918d607b77b2998c8a87a')
 
 package() {
     cd "${pkgname}"
-    
+#    cp "${srcdir}"/"${pkgname}"-"${pkgver}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
+    cp "${srcdir}"/"${pkgname}"-"${pkgver}"/usr/share/libalpm/hooks/"${pkgname}.hook" "${pkgdir}"/tmp
 }
