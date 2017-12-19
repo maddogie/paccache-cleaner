@@ -10,8 +10,7 @@ license=('')
 depends=('')
 #source=("${pkgname}-${pkgver}.tar.gz::${url}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 source=("${pkgname}-${pkgver}.tar.gz::${url}/${pkgname}-${pkgver}.tar.gz")
-md5sums=('84fd2e0878c7d70932d7a8d94e1958a8
-          1ef5369cf8d3d8c185061c7aa1ac59ff')
+md5sums=('fc4eb62dfe9f366cafd2ebde415ee49b')
 
 package() {
     mkdir -p "$pkgdir"/usr/share/libalpm/hooks
