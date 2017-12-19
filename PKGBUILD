@@ -8,11 +8,11 @@ arch=('any')
 url="https://github.com/maddogie/paccache-cleaner"
 license=('')
 depends=('')
-#source=("${pkgname}-${pkgver}.tar.gz::${url}/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
-source=("${pkgname}-${pkgver}.tar.gz::${url}/${pkgname}-${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::${url}/raw/master/${pkgname}-${pkgver}.tar.gz")
 md5sums=('fc4eb62dfe9f366cafd2ebde415ee49b')
 
 package() {
     mkdir -p "$pkgdir"/usr/share/libalpm/hooks
-    cp "${srcdir}"/"${pkgname}"/"${pkgname}.hook" "${pkgdir}"/usr/share/libalpm/hooks
+    cp "${srcdir}"/"${pkgname}"/"paccache-install_update.hook" "${pkgdir}"/usr/share/libalpm/hooks
+    cp "${srcdir}"/"${pkgname}"/"paccache-remove.hook" "${pkgdir}"/usr/share/libalpm/hooks
      }
